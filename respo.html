@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kape Kalabo</title>
+    <style>
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        .navbar a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+        .logo-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fafafa;
+            width: 20vw;
+            max-width: 250px;
+            height: auto;
+            min-height: 80px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            position: absolute;
+            top: 100px;
+            left: 20px;
+            z-index: 1000;
+        }
+        .logo-card img {
+            width: 30%; 
+            height: auto;
+            margin-right: 10px;
+        }
+        .logo-card p {
+            font-size: 1rem;
+            font-style: initial;
+            margin: 0;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0 20px;
+            height: 80vh;
+            margin-top: 120px;
+        }
+        .card {
+            display: flex;
+            flex-direction: row;
+            width: 390px;
+            height: auto;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: aliceblue;
+            margin: 20px;
+        }
+        .card img {
+            width: 50%;
+            height: auto;
+        }
+        .card p {
+            flex: 1;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .color-box {
+            width: 100%;
+            height: 100%;
+        }
+        .fixed-paragraph {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 1rem;
+            z-index: 1000;
+        }
+        body {
+            background-color: beige;
+        }
+        @media (max-width: 480px) {
+            .logo-card {
+                width: 40vw;
+                max-width: 150px;
+            }
+            .logo-card img {
+                width: 40%;
+            }
+            body {
+                background-color: beige;
+            }
+            .color-box {
+                background-color: beige;
+            }
+        }
+        @media (min-width: 481px) and (max-width: 1200px) {
+            .logo-card {
+                width: 25vw;
+            }
+            .logo-card img {
+                width: 35%;
+            }
+            body {
+                background-color: #f5cba7;
+            }
+            .color-box {
+                background-color: #f5cba7;
+            }
+        }
+        @media (min-width: 1201px) and (max-width: 1600px) {
+            .logo-card {
+                width: 20vw;
+            }
+            .logo-card img {
+                width: 30%;
+            }
+            body {
+                background-color: #f1e1b3;
+            }
+            .color-box {
+                background-color: #f1e1b3;
+            }
+        }
+        @media (min-width: 1601px) {
+            .logo-card {
+                width: 15vw;
+            }
+            .logo-card img {
+                width: 25%;
+            }
+            body {
+                background-color: #c39b6b;
+            }
+            .color-box {
+                background-color: #c39b6b;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="logo-card">
+        <img src="images.png" alt="Logo">
+        <p>KAPE KALINAW</p>
+    </div>
+    <div class="content">
+        <div class="card">
+            <img src="Klnwcmu.jpg" alt="Sample Image 1">
+            <p>We made this branch close to City of Malabon University because we're letting students have a peaceful and aesthetic place to do their work. Also, all college students like coffee. This is located near City of Malabon University.</p>
+        </div>
+        <div class="card">
+            <img src="klnw ue.jpg" alt="Sample Image 2">
+            <p>This branch is also close to University of the East but doesn't have tables like the CMU branch because the customers can easily grab and go with their orders. It's perfect if they're in a hurry. This is located at 620 New Abbey Rd, Caloocan, Metro Manila, near the University of the East.</p>
+        </div>
+    </div>
+    <p class="fixed-paragraph">Kape Kalinaw</p>
+    <div class="color-box"></div>
+    
+  
+</body>
+</html>
