@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kape Kalinaw</title>
+    <style>
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        .navbar a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+        .logo-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fafafa;
+            width: 20vw;
+            max-width: 250px;
+            height: auto;
+            min-height: 80px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            margin-top: 100px;
+            z-index: 1000;
+        }
+        .logo-card img {
+            width: 30%; 
+            height: auto;
+            margin-right: 10px;
+        }
+        .logo-card p {
+            font-size: 1rem;
+            font-style: initial;
+            margin: 0;
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0 20px;
+            height: 80vh;
+            margin-top: 120px;
+            text-align: center;
+        }
+        .card {
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            max-width: 400px;
+            height: 290px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: aliceblue;
+            margin: 20px;
+            justify-content: center;
+        }
+        .card img {
+            width: 50%;
+            height: auto;
+        }
+        .card p {
+            flex: 1;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: justify;
+        }
+        .color-box {
+            width: 100%;
+            height: 100%;
+        }
+        .fixed-paragraph {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 1rem;
+            z-index: 1000;
+        }
+        body {
+            background-color: beige;
+        }
+        @media (max-width: 480px) {
+            .logo-card {
+                width: 40vw;
+                max-width: 150px;
+            }
+            .logo-card img {
+                width: 40%;
+            }
+            .logo-card p {
+                font-size: 0.8rem; 
+            }
+            body {
+                background-color: beige;
+            }
+            .color-box {
+                background-color: beige;
+            }
+        }
+        @media (min-width: 481px) and (max-width: 1200px) {
+            .logo-card {
+                width: 25vw;
+            }
+            .logo-card img {
+                width: 35%;
+            }
+            .logo-card p {
+                font-size: 1rem;
+            }
+            body {
+                background-color: #f5cba7;
+            }
+            .color-box {
+                background-color: #f5cba7;
+            }
+        }
+        @media (min-width: 1201px) and (max-width: 1600px) {
+            .logo-card {
+                width: 20vw;
+            }
+            .logo-card img {
+                width: 30%;
+            }
+            .logo-card p {
+                font-size: 1.1rem;
+            }
+            body {
+                background-color: #f1e1b3;
+            }
+            .color-box {
+                background-color: #f1e1b3;
+            }
+        }
+        @media (min-width: 1601px) {
+            .logo-card {
+                width: 15vw;
+            }
+            .logo-card img {
+                width: 25%;
+            }
+            .logo-card p {
+                font-size: 1.2rem;
+            }
+            body {
+                background-color: #c39b6b;
+            }
+            .color-box {
+                background-color: #c39b6b;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="logo-card">
+        <img src="../responsive/Image/images.png" alt="Logo">
+        <p>KAPE KALINAW</p>
+    </div>
+    <div class="content">
+        <div class="card">
+            <img src="../responsive/Image/Klnwcmu.jpg" alt="Sample Image 1">
+            <p>"We opened this branch near the City of Malabon University to provide students with a peaceful and aesthetic place to work. Additionally, all college students love coffee. It is conveniently located near the university."</p>
+        </div>
+        <div class="card">
+            <img src="../responsive/Image/klnw ue.jpg" alt="Sample Image 2">
+            <p>This branch is also located near the University of the East, but unlike the CMU branch, it doesn't have tables. Instead, customers can easily grab and go with their orders, making it perfect for those in a hurry. It is situated at 620 New Abbey Rd, Caloocan, Metro Manila, near University of the East.</p>
+        </div>
+    </div>
+    <p class="fixed-paragraph">Kape Kalinaw</p>
+    <div class="color-box"></div>
+</body>
+</html>
